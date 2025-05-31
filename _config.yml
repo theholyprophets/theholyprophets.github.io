@@ -1,0 +1,91 @@
+# Site settings
+title: TheHolyProphets.com
+email: info@theholyprophets.com
+description: >-
+  Journey Through the Lives of Allah's Messengers. Discover the inspiring stories, 
+  profound wisdom, and timeless lessons from the prophets of Islam through beautiful 
+  articles, videos, and galleries.
+baseurl: ""
+url: "https://theholyprophets.com"
+twitter_username: theholyprophets
+github_username: theholyprophets
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Sass configuration
+sass:
+  style: compressed
+
+# Collections
+collections:
+  prophets:
+    output: true
+    permalink: /:collection/:name/
+  articles:
+    output: true
+    permalink: /:collection/:name/
+  videos:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "prophets"
+    values:
+      layout: "prophet"
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "video"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Site navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Prophets
+    url: /prophets/
+  - title: Articles
+    url: /articles/
+  - title: Gallery
+    url: /gallery/
+  - title: Videos
+    url: /videos/
+
+# Site configuration
+paginate: 6
+paginate_path: "/articles/page:num/"
+
+# Custom variables
+site_logo: "☪"
+primary_color: "#059669"
+accent_color: "#f59e0b"

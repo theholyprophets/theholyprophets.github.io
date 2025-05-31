@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<article class="min-h-screen">
+    <!-- Article Hero Section -->
+    <section class="py-20 bg-gradient-to-br {{ page.gradient | default: 'from-emerald-600 to-teal-700' }}">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <div class="mb-6">
+                    <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-medium backdrop-blur-sm">
+                        {{ page.category | capitalize }}
+                    </span>
+                    {% if page.read_time %}
+                    <span class="inline-block px-4 py-2 bg-white/20 rounded-full text-sm font-medium backdrop-blur-sm ml-2">
+                        {{ page.read_time }} min read
+                    </span>
+                    {% endif %}
+                </div>
+                <h1 class="text-4xl md:text-6xl font-serif mb-6">{{ page.title }}</h1>
+                {% if page.excerpt %}
+                <p class="text-xl opacity-90 leading-relaxed">{{ page.excerpt }}</p>
+                {% endif %}
+                {% if page.date %}
+                <div class="mt-8 text-emerald-100">
+                    Published on {{ page.date | date: "%B %d, %Y" }}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-lg max-w-none">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-serif text-center mb-12">Related Articles</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    {% assign related_articles = site.articles | where: "category", page.category | limit: 3 %}
+                    {% for article in related_articles %}
+                        {% unless article.url == page.url %}
+                        <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                            <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br {{ article.gradient | default: 'from-emerald-400 to-teal-500' }}"></div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-3">
+                                    <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">{{ article.category | capitalize }}</span>
+                                    {% if article.read_time %}
+                                    <span class="text-gray-500 text-sm ml-3">{{ article.read_time }} min read</span>
+                                    {% endif %}
+                                </div>
+                                <h3 class="text-xl font-serif mb-3">
+                                    <a href="{{ article.url | relative_url }}" class="hover:text-emerald-600 transition-colors">{{ article.title }}</a>
+                                </h3>
+                                {% if article.excerpt %}
+                                <p class="text-gray-600 mb-4">{{ article.excerpt | truncate: 120 }}</p>
+                                {% endif %}
+                                <div class="flex items-center justify-between">
+                                    {% if article.date %}
+                                    <span class="text-gray-500 text-sm">{{ article.date | date: "%B %d, %Y" }}</span>
+                                    {% endif %}
+                                    <a href="{{ article.url | relative_url }}" class="text-emerald-600 font-medium hover:underline">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+                        {% endunless %}
+                    {% endfor %}
+                </div>
+                <div class="text-center mt-12">
+                    <a href="{{ '/articles/' | relative_url }}" class="px-8 py-3 border-2 border-emerald-600 text-emerald-600 rounded-full font-medium hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                        View All Articles
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>

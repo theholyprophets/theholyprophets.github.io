@@ -1,0 +1,56 @@
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center">
+                        <span class="text-white text-lg">{{ site.site_logo | default: "☪" }}</span>
+                    </div>
+                    <span class="text-xl font-serif">{{ site.title | default: "TheHolyProphets" }}</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">{{ site.description | truncate: 120 }}</p>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    {% for nav_item in site.navigation %}
+                        {% unless nav_item.title == "Home" %}
+                        <li><a href="{{ nav_item.url | relative_url }}" class="text-gray-400 hover:text-white transition-colors">{{ nav_item.title }}</a></li>
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2">
+                    {% assign categories = site.articles | map: "category" | uniq %}
+                    {% for category in categories limit: 4 %}
+                    <li><a href="{{ '/articles/' | relative_url }}#{{ category }}" class="text-gray-400 hover:text-white transition-colors">{{ category | capitalize }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">f</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">t</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">i</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

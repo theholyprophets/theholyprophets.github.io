@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-800">
+    <!-- Islamic Pattern Overlay -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="islamic-pattern"></div>
+    </div>
+    
+    <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+        <div class="mb-8">
+            <div class="text-4xl mb-4 opacity-80">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <div class="text-sm opacity-70">In the name of Allah, the Most Gracious, the Most Merciful</div>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">
+            Journey Through the Lives of 
+            <span class="text-amber-300">Allah's Messengers</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed">
+            Discover the inspiring stories, profound wisdom, and timeless lessons from the prophets of Islam
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="{{ '/prophets/' | relative_url }}" class="px-8 py-4 bg-amber-500 text-white rounded-full font-medium hover:bg-amber-600 transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Explore Prophets
+            </a>
+            <a href="{{ '/articles/' | relative_url }}" class="px-8 py-4 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-emerald-800 transition-all duration-300">
+                Read Articles
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
+
+{{ content }}
+
+{% include featured-prophets.html %}
+{% include latest-articles.html %}
+{% include video-lessons.html %}
+{% include gallery-highlights.html %}
+{% include newsletter.html %}

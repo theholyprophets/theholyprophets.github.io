@@ -1,0 +1,43 @@
+<!-- Featured Prophets Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Featured Prophets</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Learn about the most influential messengers who shaped human history</p>
+        </div>
+
+        <!-- Prophets Carousel -->
+        <div class="relative overflow-hidden">
+            <div class="flex gap-6 overflow-x-auto scrollbar-hide pb-4" id="prophets-carousel">
+                {% assign featured_prophets = site.prophets | where: "categories", "major" | sort: "timeline_order" | limit: 4 %}
+                {% for prophet in featured_prophets %}
+                <!-- Prophet Card -->
+                <div class="group relative flex-none w-80 h-96 overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-br {{ prophet.gradient | default: 'from-emerald-500 to-teal-600' }}"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6 text-white">
+                        <h3 class="text-2xl font-serif mb-2">{{ prophet.title }}</h3>
+                        <p class="text-sm opacity-90 mb-3">{{ prophet.subtitle }}</p>
+                        <p class="text-xs opacity-80 leading-relaxed">{{ prophet.description | truncate: 80 }}</p>
+                    </div>
+                    {% if prophet.period %}
+                    <div class="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-medium">
+                        {{ prophet.period }}
+                    </div>
+                    {% endif %}
+                    <a href="{{ prophet.url | relative_url }}" class="absolute inset-0"></a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="{{ '/prophets/' | relative_url }}" class="inline-flex items-center px-6 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition-colors">
+                View All Prophets
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>

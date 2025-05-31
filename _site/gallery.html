@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TheHolyProphets.com</title>
+    <meta name="description" content="Beautiful Islamic art and historical sites related to the prophets">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Gallery | TheHolyProphets.com</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Gallery" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Beautiful Islamic art and historical sites related to the prophets" />
+<meta property="og:description" content="Beautiful Islamic art and historical sites related to the prophets" />
+<link rel="canonical" href="http://localhost:4000/gallery.html" />
+<meta property="og:url" content="http://localhost:4000/gallery.html" />
+<meta property="og:site_name" content="TheHolyProphets.com" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gallery" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Beautiful Islamic art and historical sites related to the prophets","headline":"Gallery","url":"http://localhost:4000/gallery.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+<nav class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-gray-100">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center">
+                    <span class="text-white text-lg">☪</span>
+                </div>
+                <a href="/" class="text-xl font-serif text-gray-800">TheHolyProphets.com</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                
+                <a href="/" 
+                   class="text-gray-600 hover:text-emerald-600 transition-colors">
+                    Home
+                </a>
+                
+                <a href="/prophets/" 
+                   class="text-gray-600 hover:text-emerald-600 transition-colors">
+                    Prophets
+                </a>
+                
+                <a href="/articles/" 
+                   class="text-gray-600 hover:text-emerald-600 transition-colors">
+                    Articles
+                </a>
+                
+                <a href="/gallery/" 
+                   class="text-gray-600 hover:text-emerald-600 transition-colors">
+                    Gallery
+                </a>
+                
+                <a href="/videos/" 
+                   class="text-gray-600 hover:text-emerald-600 transition-colors">
+                    Videos
+                </a>
+                
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+            <div class="flex flex-col space-y-4 pt-4">
+                
+                <a href="/" 
+                   class="text-gray-600">
+                    Home
+                </a>
+                
+                <a href="/prophets/" 
+                   class="text-gray-600">
+                    Prophets
+                </a>
+                
+                <a href="/articles/" 
+                   class="text-gray-600">
+                    Articles
+                </a>
+                
+                <a href="/gallery/" 
+                   class="text-gray-600">
+                    Gallery
+                </a>
+                
+                <a href="/videos/" 
+                   class="text-gray-600">
+                    Videos
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <main>
+        
+<!-- Page Hero Section -->
+<section class="py-20 bg-gradient-to-br from-emerald-600 to-teal-700">
+    <div class="container mx-auto px-6 text-center">
+        <div class="max-w-3xl mx-auto text-white">
+            <h1 class="text-4xl md:text-6xl font-serif mb-6">Gallery</h1>
+            
+            <p class="text-xl opacity-90 leading-relaxed">Beautiful Islamic art and historical sites related to the prophets</p>
+            
+        </div>
+    </div>
+</section>
+
+
+<div class="container mx-auto px-6 py-12">
+    
+    
+    <div class="max-w-6xl mx-auto">
+        <!-- Gallery Filters -->
+<div class="mb-12">
+    <div class="flex flex-wrap justify-center gap-3">
+        <button class="gallery-filter active bg-emerald-600 text-white px-6 py-2 rounded-full font-medium hover:bg-emerald-700 transition-colors" data-filter="all">
+            All Images
+        </button>
+        <button class="gallery-filter bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors" data-filter="architecture">
+            Architecture
+        </button>
+        <button class="gallery-filter bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors" data-filter="calligraphy">
+            Calligraphy
+        </button>
+        <button class="gallery-filter bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors" data-filter="historical">
+            Historical Sites
+        </button>
+        <button class="gallery-filter bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors" data-filter="art">
+            Islamic Art
+        </button>
+    </div>
+</div>
+
+<!-- Gallery Grid -->
+<div class="gallery-grid">
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="architecture" data-title="Kaaba at Night" data-description="The sacred Kaaba in Mecca during night prayers">
+        <div class="aspect-square bg-gradient-to-br from-emerald-400 to-teal-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Kaaba at Night</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="architecture" data-title="Al-Aqsa Mosque" data-description="The blessed Al-Aqsa Mosque in Jerusalem">
+        <div class="aspect-square bg-gradient-to-br from-amber-400 to-orange-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Al-Aqsa Mosque</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="historical" data-title="Mount Sinai" data-description="Mount Sinai where Prophet Musa received the Torah">
+        <div class="aspect-square bg-gradient-to-br from-purple-400 to-indigo-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Mount Sinai</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="historical" data-title="Cave of Hira" data-description="The cave where Prophet Muhammad received his first revelation">
+        <div class="aspect-square bg-gradient-to-br from-teal-400 to-cyan-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Cave of Hira</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="calligraphy" data-title="Bismillah Calligraphy" data-description="Beautiful Arabic calligraphy of Bismillah">
+        <div class="aspect-3/4 bg-gradient-to-br from-emerald-600 to-teal-700 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Bismillah Calligraphy</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="art" data-title="Islamic Geometric Pattern" data-description="Traditional Islamic geometric art pattern">
+        <div class="aspect-square bg-gradient-to-br from-rose-400 to-pink-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Islamic Geometric Pattern</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="architecture" data-title="Dome of the Rock" data-description="The iconic golden dome in Jerusalem">
+        <div class="aspect-square bg-gradient-to-br from-yellow-400 to-amber-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Dome of the Rock</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="architecture" data-title="Medina at Sunset" data-description="The Prophet's Mosque in Medina during sunset">
+        <div class="aspect-square bg-gradient-to-br from-orange-400 to-red-500 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Medina at Sunset</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="calligraphy" data-title="Quranic Verse Calligraphy" data-description="Elegant calligraphy of a Quranic verse">
+        <div class="aspect-3/4 bg-gradient-to-br from-indigo-500 to-purple-600 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Quranic Verse Calligraphy</h4>
+        </div>
+    </div>
+    
+    <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer" data-category="art" data-title="Arabesque Pattern" data-description="Intricate Islamic arabesque design">
+        <div class="aspect-square bg-gradient-to-br from-emerald-500 to-green-600 hover:scale-105 transition-transform duration-300"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <h4 class="font-medium">Arabesque Pattern</h4>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden items-center justify-center p-4">
+    <div id="lightbox-content" class="bg-white rounded-2xl overflow-hidden max-w-4xl w-full max-h-full">
+        <div class="relative">
+            <div id="lightbox-image" class="w-full h-96"></div>
+            <button id="close-lightbox" class="absolute top-4 right-4 w-10 h-10 bg-black bg-opacity-50 rounded-full flex items-center justify-center text-white hover:bg-opacity-70 transition-all">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-6">
+            <h3 id="lightbox-title" class="text-2xl font-serif mb-2"></h3>
+            <p id="lightbox-description" class="text-gray-600"></p>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    </main>
+    
+    <!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center">
+                        <span class="text-white text-lg">☪</span>
+                    </div>
+                    <span class="text-xl font-serif">TheHolyProphets.com</span>
+                </div>
+                <p class="text-gray-400 leading-relaxed">Journey Through the Lives of Allah's Messengers. Discover the inspiring stories,  profound wisdom, and timeless lesso...</p>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    
+                        
+                    
+                        
+                        <li><a href="/prophets/" class="text-gray-400 hover:text-white transition-colors">Prophets</a></li>
+                        
+                    
+                        
+                        <li><a href="/articles/" class="text-gray-400 hover:text-white transition-colors">Articles</a></li>
+                        
+                    
+                        
+                        <li><a href="/gallery/" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+                        
+                    
+                        
+                        <li><a href="/videos/" class="text-gray-400 hover:text-white transition-colors">Videos</a></li>
+                        
+                    
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                <ul class="space-y-2">
+                    
+                    
+                    <li><a href="/articles/#biography" class="text-gray-400 hover:text-white transition-colors">Biography</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">f</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">t</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                        <span class="text-sm">i</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 TheHolyProphets.com. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

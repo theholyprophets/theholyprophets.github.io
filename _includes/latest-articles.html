@@ -1,0 +1,96 @@
+<!-- Latest Articles Section -->
+<section class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif text-gray-800 mb-4">Latest Articles</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Deep insights into the lives and teachings of the prophets</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% assign latest_articles = site.articles | sort: "date" | reverse | limit: 3 %}
+            {% for article in latest_articles %}
+            <!-- Article Card -->
+            <article class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br {{ article.gradient | default: 'from-emerald-400 to-teal-500' }}"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-{{ article.category_color | default: 'emerald' }}-100 text-{{ article.category_color | default: 'emerald' }}-800 px-3 py-1 rounded-full text-sm font-medium">{{ article.category | capitalize }}</span>
+                        {% if article.read_time %}
+                        <span class="text-gray-500 text-sm ml-3">{{ article.read_time }} min read</span>
+                        {% endif %}
+                    </div>
+                    <h3 class="text-xl font-serif mb-3 group-hover:text-emerald-600 transition-colors">
+                        <a href="{{ article.url | relative_url }}">{{ article.title }}</a>
+                    </h3>
+                    {% if article.excerpt %}
+                    <p class="text-gray-600 mb-4">{{ article.excerpt | truncate: 120 }}</p>
+                    {% endif %}
+                    <div class="flex items-center justify-between">
+                        {% if article.date %}
+                        <span class="text-gray-500 text-sm">{{ article.date | date: "%B %d, %Y" }}</span>
+                        {% endif %}
+                        <a href="{{ article.url | relative_url }}" class="text-emerald-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+            
+            {% if site.articles.size == 0 %}
+            <!-- Sample articles when no content exists -->
+            <article class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-emerald-400 to-teal-500"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">Biography</span>
+                        <span class="text-gray-500 text-sm ml-3">5 min read</span>
+                    </div>
+                    <h3 class="text-xl font-serif mb-3 group-hover:text-emerald-600 transition-colors">The Courage of Prophet Ibrahim</h3>
+                    <p class="text-gray-600 mb-4">Exploring the unwavering faith and courage that made Ibrahim the friend of Allah...</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500 text-sm">March 15, 2024</span>
+                        <a href="#" class="text-emerald-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-amber-400 to-orange-500"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium">Lessons</span>
+                        <span class="text-gray-500 text-sm ml-3">8 min read</span>
+                    </div>
+                    <h3 class="text-xl font-serif mb-3 group-hover:text-emerald-600 transition-colors">Patience in the Story of Yusuf</h3>
+                    <p class="text-gray-600 mb-4">Learning about perseverance and trust in Allah through Prophet Yusuf's trials...</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500 text-sm">March 12, 2024</span>
+                        <a href="#" class="text-emerald-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-w-16 aspect-h-9 bg-gradient-to-br from-purple-400 to-indigo-500"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Miracles</span>
+                        <span class="text-gray-500 text-sm ml-3">6 min read</span>
+                    </div>
+                    <h3 class="text-xl font-serif mb-3 group-hover:text-emerald-600 transition-colors">The Miracles of Prophet Isa</h3>
+                    <p class="text-gray-600 mb-4">Understanding the divine signs and healing powers granted to Jesus...</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-500 text-sm">March 10, 2024</span>
+                        <a href="#" class="text-emerald-600 font-medium hover:underline">Read More</a>
+                    </div>
+                </div>
+            </article>
+            {% endif %}
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="{{ '/articles/' | relative_url }}" class="px-8 py-3 border-2 border-emerald-600 text-emerald-600 rounded-full font-medium hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                View All Articles
+            </a>
+        </div>
+    </div>
+</section>
