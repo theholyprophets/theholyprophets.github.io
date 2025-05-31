@@ -469,6 +469,138 @@ html {
     font-size: 10px;
 }
 
+/* Prose (Typography) Styles */
+.prose {
+    color: #374151;
+    max-width: none;
+}
+
+.prose p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.prose h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.prose h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.prose h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.prose strong {
+    font-weight: 600;
+    color: #111827;
+}
+
+.prose em {
+    font-style: italic;
+}
+
+.prose ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.prose ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.prose li {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.prose blockquote {
+    border-left: 4px solid #059669;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #4b5563;
+    background-color: #f9fafb;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose a {
+    color: #059669;
+    text-decoration: underline;
+}
+
+.prose a:hover {
+    color: #047857;
+}
+
+.prose code {
+    background-color: #f3f4f6;
+    color: #059669;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, monospace;
+}
+
+.prose-lg p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+.prose-lg h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+}
+
+.prose-lg h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.prose-lg h3 {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.prose-lg li {
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
 /* Utility Classes */
 .aspect-w-3 {
     position: relative;
