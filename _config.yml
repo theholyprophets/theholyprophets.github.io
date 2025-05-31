@@ -18,6 +18,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# GitHub Pages settings
+permalink: pretty
+
 # Sass configuration
 sass:
   style: compressed
@@ -73,13 +76,13 @@ navigation:
   - title: Home
     url: /
   - title: Prophets
-    url: /prophets/
+    url: /prophets
   - title: Articles
-    url: /articles/
+    url: /articles
   - title: Gallery
-    url: /gallery/
+    url: /gallery
   - title: Videos
-    url: /videos/
+    url: /videos
 
 # Site configuration
 paginate: 6
