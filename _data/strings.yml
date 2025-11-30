@@ -1,0 +1,51 @@
+en:
+  site_title: "TheHolyProphets.com"
+  site_description: "Journey Through the Lives of Allah's Messengers"
+  nav:
+    home: "Home"
+    prophets: "Prophets"
+    articles: "Articles"
+    gallery: "Gallery"
+    videos: "Videos"
+  homepage:
+    hero_title: "Journey Through the Lives of Allah's Messengers"
+    hero_subtitle: "Discover the inspiring stories, profound wisdom, and timeless lessons from the prophets of Islam through beautiful articles, videos, and galleries."
+    featured_prophets: "Featured Prophets"
+    latest_articles: "Latest Articles"
+    gallery_highlights: "Gallery Highlights"
+    video_lessons: "Video Lessons"
+  common:
+    read_more: "Read More"
+    learn_more: "Learn More"
+    view_all: "View All"
+    search: "Search"
+    categories: "Categories"
+    filter: "Filter"
+    timeline: "Timeline"
+    grid: "Grid"
+
+my:
+  site_title: "TheHolyProphets.com"
+  site_description: "အလ္လာဟ်၏ စာတမ်းတော်များ၏ ဘဝများကို ခရီးသွားခြင်း"
+  nav:
+    home: "ပင်မစာမျက်နှာ"
+    prophets: "ပရောဖက်များ"
+    articles: "ဆောင်းပါးများ"
+    gallery: "ပုံများ"
+    videos: "ဗီဒီယိုများ"
+  homepage:
+    hero_title: "အလ္လာဟ်၏ စာတမ်းတော်များ၏ ဘဝများကို ခရီးသွားခြင်း"
+    hero_subtitle: "လှပသော ဆောင်းပါးများ၊ ဗီဒီယိုများနှင့် ပုံများမှတစ်ဆင့် အစ္စလာမ်ပရောဖက်များ၏ လှုံ့ဆော်မှုရသော ဇာတ်လမ်းများ၊ နက်နဲသော အသိပညာနှင့် ကာလရှည်လည် သင်ခန်းစာများကို ရှာဖွေပါ။"
+    featured_prophets: "အထူးပြုပရောဖက်များ"
+    latest_articles: "နောက်ဆုံးဆောင်းပါးများ"
+    gallery_highlights: "ပုံများ အထူးပြုများ"
+    video_lessons: "ဗီဒီယို သင်ခန်းစာများ"
+  common:
+    read_more: "ပိုမိုဖတ်ရှုရန်"
+    learn_more: "ပိုမိုသိရှိရန်"
+    view_all: "အားလုံးကြည့်ရန်"
+    search: "ရှာဖွေပါ"
+    categories: "အမျိုးအစားများ"
+    filter: "စစ်ထုတ်ပါ"
+    timeline: "အချိန်ဇယား"
+    grid: "ဇယားကွက်"
