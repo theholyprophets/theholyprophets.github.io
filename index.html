@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Holy Prophets - Learn About Islamic Prophets Interactively</title>
+  <meta name="description" content="Discover the lives and teachings of Islamic prophets through interactive timelines, maps, lessons, and quizzes. Beautiful, verified content made simple.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Holy Prophets - Interactive Islamic Learning">
+  <meta property="og:description" content="Learn about the Prophets of Islam with interactive timelines, maps, lessons, and quizzes.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'serif': ['Amiri', 'serif'],
+            'sans': ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'primary': {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            'gold': {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .pattern-bg {
+      background-color: #14532d;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23166534' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #22c55e 0%, #fbbf24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .glow {
+      box-shadow: 0 0 40px rgba(34, 197, 94, 0.3);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-gray-950 text-gray-100 antialiased">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen pattern-bg relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-20 left-10 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 py-20 min-h-screen flex flex-col justify-center">
+
+      <!-- Badge -->
+      <div class="flex justify-center mb-8">
+        <span class="inline-flex items-center gap-2 px-4 py-2 bg-primary-900/50 border border-primary-700/50 rounded-full text-primary-300 text-sm font-medium">
+          <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
+          Coming Soon
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-center leading-tight mb-6">
+        Learn About the
+        <span class="gradient-text">Prophets of Islam</span>
+        <br>Like Never Before
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-xl md:text-2xl text-gray-400 text-center max-w-3xl mx-auto mb-12 leading-relaxed">
+        Interactive timelines, maps, lessons, and quizzes.
+        <span class="text-gray-200">Short, verified content.</span> Beautiful experience.
+        <span class="text-gray-200">No long books required.</span>
+      </p>
+
+      <!-- Email Signup Form - Kit.com -->
+      <div class="max-w-xl mx-auto w-full mb-12">
+        <script async data-uid="64f316d966" src="https://aungmyooo.kit.com/64f316d966/index.js"></script>
+        <p class="text-gray-500 text-sm text-center mt-4">
+          No spam, ever. Unsubscribe anytime.
+        </p>
+      </div>
+
+      <!-- Social Proof / Features Preview -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+        <div class="text-center p-4">
+          <div class="text-3xl mb-2">📜</div>
+          <div class="text-sm text-gray-400">25 Prophets</div>
+        </div>
+        <div class="text-center p-4">
+          <div class="text-3xl mb-2">🗺️</div>
+          <div class="text-sm text-gray-400">Interactive Maps</div>
+        </div>
+        <div class="text-center p-4">
+          <div class="text-3xl mb-2">⏳</div>
+          <div class="text-sm text-gray-400">Visual Timelines</div>
+        </div>
+        <div class="text-center p-4">
+          <div class="text-3xl mb-2">✨</div>
+          <div class="text-sm text-gray-400">Quizzes & Lessons</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Different Section -->
+  <section class="py-24 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4">
+        Why This Is Different
+      </h2>
+      <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        We're building what we wished existed when learning about the prophets.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8 hover:border-primary-500/50 transition-all">
+          <div class="w-14 h-14 bg-primary-900/50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Quick & Clear</h3>
+          <p class="text-gray-400 leading-relaxed">
+            5-minute summaries instead of 500-page books. Get the key lessons without the overwhelm.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8 hover:border-primary-500/50 transition-all">
+          <div class="w-14 h-14 bg-primary-900/50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Verified Content</h3>
+          <p class="text-gray-400 leading-relaxed">
+            All information sourced from authentic Islamic texts and scholarly sources you can trust.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-8 hover:border-primary-500/50 transition-all">
+          <div class="w-14 h-14 bg-primary-900/50 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Actually Enjoyable</h3>
+          <p class="text-gray-400 leading-relaxed">
+            Beautiful design, interactive elements, and engaging quizzes make learning a joy.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What You'll Learn Section -->
+  <section class="py-24 bg-gray-950">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-4">
+        What You'll Discover
+      </h2>
+      <p class="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+        From Adam (AS) to Muhammad (SAW), explore the complete journey.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="flex gap-4 p-6 bg-gray-900/50 rounded-xl border border-gray-800">
+          <div class="text-2xl">🕌</div>
+          <div>
+            <h3 class="font-semibold mb-1">Complete Prophet Stories</h3>
+            <p class="text-gray-400 text-sm">Life events, miracles, and historical context for each prophet.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 p-6 bg-gray-900/50 rounded-xl border border-gray-800">
+          <div class="text-2xl">🎯</div>
+          <div>
+            <h3 class="font-semibold mb-1">Key Lessons & Morals</h3>
+            <p class="text-gray-400 text-sm">Practical wisdom you can apply to your daily life.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 p-6 bg-gray-900/50 rounded-xl border border-gray-800">
+          <div class="text-2xl">🌳</div>
+          <div>
+            <h3 class="font-semibold mb-1">Family Trees & Connections</h3>
+            <p class="text-gray-400 text-sm">See how the prophets were connected through generations.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 p-6 bg-gray-900/50 rounded-xl border border-gray-800">
+          <div class="text-2xl">📍</div>
+          <div>
+            <h3 class="font-semibold mb-1">Historical Locations</h3>
+            <p class="text-gray-400 text-sm">Interactive maps showing where key events took place.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 pattern-bg relative">
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-gray-950"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
+        Be the First to Know
+      </h2>
+      <p class="text-xl text-gray-400 mb-10">
+        Join the waiting list and help shape what we build. Early supporters get lifetime access.
+      </p>
+
+      <!-- Email Signup Form - Kit.com -->
+      <div class="max-w-xl mx-auto mb-6">
+        <script async data-uid="64f316d966" src="https://aungmyooo.kit.com/64f316d966/index.js"></script>
+      </div>
+
+      <p class="text-gray-500 text-sm">
+        Free forever for basic access. Premium features coming later.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-gray-950 border-t border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="font-serif text-2xl mb-4 gradient-text">The Holy Prophets</p>
+      <p class="text-gray-500 text-sm">
+        Building with love for the Ummah. &copy; 2025
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
